@@ -1,4 +1,4 @@
-import readline from 'readline';
+/*import readline from 'readline';*/
 
 const messages = [
   "2 Peter 3:9 Jehovah is not slow concerning his promise, as some people consider slowness, but he is patient with you because he does not desire anyone to be destroyed but desires all to attain to repentance",
@@ -10,8 +10,13 @@ const messages = [
 function generateMessage() {
   let randomMessage = messages[Math.floor(Math.random() * messages.length)];
   return randomMessage;
-}
+} 
 
+console.log(generateMessage); 
+
+
+
+/* 
 const rL = readline.createInterface({
   input: process.stdin,
   output: process.stdout
@@ -25,6 +30,7 @@ const rL = readline.createInterface({
  *
  * @param {string} answer - The user's response to the question.
  */
+/*
 rL.question('Would you like to generate a random message? (yes/no)', (answer) => {
   if (answer.toLowerCase() === 'yes') {
     console.log(generateMessage());
@@ -35,4 +41,4 @@ rL.question('Would you like to generate a random message? (yes/no)', (answer) =>
   }
   rL.close();
 }); 
-
+*/

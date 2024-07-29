@@ -12,7 +12,7 @@ function generateMessage() {
   return randomMessage;
 } 
 
-console.log(generateMessage); 
+console.log(generateMessage()); 
 
 
 
